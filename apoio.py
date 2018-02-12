@@ -43,7 +43,6 @@ class Dispatcher:
 
         command.execute(arguments)
 
-
     def do_configure(self, arguments):
         pass
 
@@ -52,8 +51,6 @@ class Dispatcher:
 
     def do_generate_data(self, arguments):
         self.execute(GenerateData(), arguments)
-
-
 
 
 if __name__ == '__main__':

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4a3728-53cd-49a9-abf5-21fe36f10b50" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/poc-py-cli-docops.iml" afterPath="$PROJECT_DIR$/.idea/poc-py-cli-docops.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/apoio.py" afterPath="$PROJECT_DIR$/apoio.py" />
-      <change beforePath="$PROJECT_DIR$/generate_data/__init__.py" afterPath="$PROJECT_DIR$/commands/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +16,8 @@
       <file leaf-file-name="apoio.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apoio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state relative-caret-position="610">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="e#1858#1883#0" expanded="true" />
               </folding>
@@ -86,8 +82,8 @@
         <option value="$PROJECT_DIR$/generate_data/__init__.py" />
         <option value="$PROJECT_DIR$/generate_data/generate_data.py" />
         <option value="$PROJECT_DIR$/commands/generate_data.py" />
-        <option value="$PROJECT_DIR$/apoio.py" />
         <option value="$PROJECT_DIR$/commands/commands.py" />
+        <option value="$PROJECT_DIR$/apoio.py" />
       </list>
     </option>
   </component>
@@ -359,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apoio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="610">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#1858#1883#0" expanded="true" />
           </folding>
