@@ -32,13 +32,13 @@ class Dispatcher:
 
     def dispatch(self, arguments):
         filtered = {k: v for k, v in arguments.iteritems() if v is True and not k.startswith('--')}
-        for arg in filtered:
-            action = "do_%s" % (arg.replace('-', '_'))
+        for k, v in filtered.iteritems():
+            action = "do_%s" % (k.replace('-', '_'))
             getattr(self, action)(arguments)
             break
 
     @staticmethod
-    def execute(self, command, arguments):
+    def execute(command, arguments):
         if not isinstance(command, ICommand):
             raise TypeError('Expected an ICommand')
 
