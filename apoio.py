@@ -19,23 +19,43 @@ Options:
     --percent-exams-standard=<percent-standard>             The percentage distribution of exams type standard [default: 96].
     --percent-exams-additional=<percent-additional>         The percentage distribution of exams type additional [default: 0].
 """
-import imp
+
 from docopt import docopt
-import generate_data
+from commands.commands import ICommand
+from commands.generate_data import GenerateData
 
 
-def dispatch(arguments):
+class Dispatcher:
 
-    filtered = {k: v for k, v in arguments.iteritems() if v is True and not k.startswith('--')}
+    def __init__(self):
+        pass
 
-    print(filtered)
+    def dispatch(self, arguments):
+        filtered = {k: v for k, v in arguments.iteritems() if v is True and not k.startswith('--')}
+        for arg in filtered:
+            action = "do_%s" % (arg.replace('-', '_'))
+            getattr(self, action)(arguments)
+            break
 
-    # imp.find_module('generate_data')
+    def execute(self, command, arguments):
+        if not isinstance(command, ICommand):
+            raise TypeError('Expected an ICommand')
 
-    # for arg in arguments:
-    #     print arg
+        command.execute(arguments)
+
+
+    def do_configure(self, arguments):
+        pass
+
+    def do_generate_user(self, arguments):
+        pass
+
+    def do_generate_data(self, arguments):
+        self.execute(GenerateData(), arguments)
+
 
 
 
 if __name__ == '__main__':
-    dispatch(docopt(__doc__))
+    dispatcher = Dispatcher()
+    dispatcher.dispatch(docopt(__doc__))
