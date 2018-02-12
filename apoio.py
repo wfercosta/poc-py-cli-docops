@@ -37,6 +37,7 @@ class Dispatcher:
             getattr(self, action)(arguments)
             break
 
+    @staticmethod
     def execute(self, command, arguments):
         if not isinstance(command, ICommand):
             raise TypeError('Expected an ICommand')
